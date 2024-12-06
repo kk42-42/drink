@@ -1,0 +1,17 @@
+
+
+{% block content %}
+<h2>飲料清單</h2>
+<ul>
+    {% for drink in drinks %}
+    <li>
+        <strong>品名:</strong> {{ drink.title }}<br>
+        <strong>配料:</strong> {{ drink.toppings }}<br>
+        <strong>甜度:</strong> {{ drink.sugar_level }}<br>
+        <strong>冰度:</strong> {{ drink.ice_level }}<br>
+    </li>
+    <hr>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('index') }}">返回首頁</a>
+{% endblock %}

@@ -1,0 +1,28 @@
+
+
+{% block content %}
+<form action="{{ url_for('submit') }}" method="POST">
+    <label for="title">品名:</label><br>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="toppings">配料:</label><br>
+    <input type="text" id="toppings" name="toppings" required><br><br>
+
+    <label for="sugar_level">甜度:</label><br>
+    <select id="sugar_level" name="sugar_level" required>
+        <option value="無糖">無糖</option>
+        <option value="少糖">少糖</option>
+        <option value="半糖">半糖</option>
+        <option value="全糖">全糖</option>
+    </select><br><br>
+
+    <label for="ice_level">冰度:</label><br>
+    <select id="ice_level" name="ice_level" required>
+        <option value="去冰">去冰</option>
+        <option value="少冰">少冰</option>
+        <option value="正常冰">正常冰</option>
+    </select><br><br>
+
+    <button type="submit">提交飲料</button>
+</form>
+{% endblock %}

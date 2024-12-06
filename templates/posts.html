@@ -1,0 +1,15 @@
+
+
+{% block head%}
+    <title>Posts</title>
+{% endblock%}
+{% block body%}
+    <h1>All Posts</h1>
+
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <h3>{{ post.author }}</h3>
+        <p>{{ post.content }}</p>
+    {% endfor%}
+
+{% endblock%}

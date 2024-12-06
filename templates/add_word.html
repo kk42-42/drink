@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增單字</title>
+</head>
+<body>
+    <h1>新增單字</h1>
+    <form method="POST">
+        <label for="vocabulary">英文單字:</label>
+        <input type="text" name="vocabulary" required><br>
+
+        <label for="translation">中文翻譯:</label>
+        <input type="text" name="translation" required><br>
+
+        <label for="part_of_speech">詞性:</label>
+        <input type="text" name="part_of_speech" required><br>
+
+        <button type="submit">新增</button>
+    </form>
+    <a href="{{ url_for('index') }}">回到主頁</a>
+</body>
+</html>
