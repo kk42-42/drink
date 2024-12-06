@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "importPath": "app",
+        "description": "app",
+        "isExtraImport": true,
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "Word",
         "kind": 6,
         "importPath": "templates.models",
